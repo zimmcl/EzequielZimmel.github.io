@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>{{ site.title }}</title>
     <meta name="description" content="{{ site.name }} Curriculum Vitae">
-    <meta name="author" content="{{ site.name }} @{{ site.twitter }}">
+    <!--<meta name="author" content="{{ site.name }} @{{ site.twitter }}">-->
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -22,10 +22,10 @@
         <h1>{{ site.name }}</h1>
         <h5><i class="fa fa-calendar" aria-hidden="true"></i> {{ site.fecha }}</h5><br>
         <p>
-            <a href="{{ site.tel_full }}"><i class="fa fa-mobile" aria-hidden="true"></i>  {{ site.tel }}</a>
+            <a href="tel:{{ site.tel_full }}" target="_blank"><i class="fa fa-mobile" aria-hidden="true"></i>  {{ site.tel }}</a>
         </p>
         <address>
-            <a href="{{ site.google_maps }}"><i class="fa fa-map-marker" aria-hidden="true"></i>  
+            <a href="{{ site.google_maps }}" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>  
                 {{ site.address }}<br/>
                 {{ site.postcode }}
                 {{ site.city }} - 
@@ -36,15 +36,17 @@
             <!--<a href="{{ site.website_full }}">{{ site.website }}</a><br/>-->
         </p>
         <p>
-            <a href="{{ site.email_full }}">{{ site.email }}</a><br/>
-            <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i> Github</a> |
-            <a href="https://facebook.com/{{ site.facebook }}"><i class="fa fa-facebook"></i> Facebook</a>
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a><br/>
+            <a href="https://github.com/{{ site.github }}" target="_blank"><i class="fa fa-github"></i> Github</a> |
+            <a href="https://facebook.com/{{ site.facebook }}" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
         </p>
+        <button><a href="{{ site.baseurl }}static/img/Curriculum_Vitae.pdf" target="_blank"><font size="3" color="#27a822">Descargar CV</font></a></button>
     </header>
+
     <div class="thirteen columns clearfix">
 
         {{ content }}
-
+     <p align="center"><img src="{{ site.baseurl }}static/img/firma.jpg" class="firma" width="100px" height="75"></p>   
     <footer class="thirteen columns">
         <p align="center">Original Theme by <a href="https://www.github.com/biomadeira/vitae">vitae</a>
              | {{site.name}} - © {{ site.time | date: '%Y' }}</p>

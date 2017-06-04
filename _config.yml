@@ -7,28 +7,26 @@ permalink: :title.html
 gems: [jekyll-paginate]
 port: 4000
 safe: true
-#url: http://biomadeira.github.io/vitae
-#author: Fábio Madeira
 
 # edit this section with your information
 # biomadeira.github.io - all contents run on /vitae/
 # for a normal use at the base of the server change it to "/"
 # baseurl: /vitae/
-title: Curriculum vitae
+title: Ezequiel J. Zimmel - CV
 name: Ezequiel J. Zimmel
 fecha: 15 nov 1987
 email: ezequielzimmel@gmail.com
 #email_full: mailto:youremail@me.com
-#website: github.io/ezequielzimmel
-#website_full: https://biomadeira.github.io/sustain
+#website: zimmcl.github.io
+#website_full: https://
 github: zimmcl
 facebook: zimmcl
 #twitter: twitter
 tel: 3576-466529
-#tel_full: tel:+440000000000
-#google_maps: 'https://www.google.co.uk/maps/place/44+Perth+St,+Edinburgh,+Edinburgh+City+EH3+5BL'
+tel_full: +5493576466529
+google_maps: 'https://www.google.com.ar/maps/place/José+Baigorri+422,+X5001AJJ+Córdoba/'
 address: J. Baigorri 422 1B
-#postcode: EH3 5BL
+#postcode: xxxx-xxxx
 city: Córdoba
 country: Argentina
 google_analytics: UA-69300817-1
