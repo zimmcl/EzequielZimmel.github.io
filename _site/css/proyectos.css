@@ -1,3 +1,17 @@
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: center;
+    width: 33.3%;
+    padding: 2px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 * {
     box-sizing: border-box;
 }

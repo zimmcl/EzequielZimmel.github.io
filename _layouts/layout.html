@@ -12,18 +12,31 @@
     <link rel="stylesheet" href="{{ site.baseurl }}static/css/base.css">
     <link rel="stylesheet" href="{{ site.baseurl }}static/css/skeleton.css">
     <link rel="stylesheet" href="{{ site.baseurl }}static/css/layout.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}static/css/navigation.css">
+    <!--<link rel="stylesheet" href="{{ site.baseurl }}static/css/navigation.css">-->
+    <link rel="stylesheet" href="css/proyectos.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
     <link rel="shortcut icon" href="{{ site.baseurl }}static/img/favicon.ico">
-</head>
 
+</head>
 
 <body>
     <div class="container">
         <header class="three columns">
+
+
             <img src="{{ site.baseurl }}static/img/avatar.jpg" class="me">
-            <h1>{{ site.name }}</h1>
+            <h2>{{ site.name }}</h2>
+
+            <div class="row">
+                <div class="column">
+                    <img src="{{ site.baseurl }}static/img/english.png" alt="English" style="width:50%" />
+                </div>
+                <div class="column">
+                    <img src="{{ site.baseurl }}static/img/spanish.png" alt="Spanish" style="width:50%" />
+                </div>
+            </div>
+
+
             <h5><i class="fa fa-calendar" aria-hidden="true"></i> {{ site.fecha }}</h5><br>
             <p>
                 <a href="tel:{{ site.tel_full }}" target="_blank"><i class="fa fa-mobile" aria-hidden="true"></i>
@@ -50,7 +63,8 @@
             </p>
             <button><a href="{{ site.baseurl }}static/img/Curriculum_Vitae.pdf" target="_blank">
                     <font size="3" color="#27a822">Descargar CV</font>
-                </a></button>
+                </a>
+            </button>
         </header>
 
         <div class="thirteen columns clearfix">

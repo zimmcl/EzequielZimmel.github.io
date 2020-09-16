@@ -37,10 +37,13 @@ p, address {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     margin-bottom: 20px;
-
 }
 
 header > h1, section > h1 {
+    color: #27A822;
+}
+
+header > h2, section > h2 {
     color: #27A822;
 }
 
@@ -143,4 +146,14 @@ footer p {
 	border-top: 3px solid #27a822;
     margin-bottom: 10px;
     font-size: 10pt;
+}
+
+button{
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color:white;
+}
+
+button > a > font {
+    color: gray;
 }
