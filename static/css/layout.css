@@ -147,7 +147,7 @@ footer p {
     margin-bottom: 10px;
     font-size: 10pt;
 }
-
+/*
 button{
     cursor: not-allowed;
     pointer-events: none;
@@ -157,3 +157,4 @@ button{
 button > a > font {
     color: gray;
 }
+*/
