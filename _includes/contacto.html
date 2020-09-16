@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+<body>
+<br>
+<hr>
+    <section class="thirteen columns">
+        <br>
+        <h1>Contacto</h1>
+        <form accept-charset="UTF-8" action="http://formspree.io/ezequielzimmel@gmail.com" method="POST" enctype="multipart/form-data" class="container">
+            <label for="name"><h5>Nombre</h5></label>
+            <input type="text" id="name" name="name" placeholder="Pepe Miuren"><br>
+            <label for="email"><h5>Email</h5></label>
+            <input type="email" id="email" name="email" placeholder="pepemiuren@example.com"><br>
+            <label for="subject"><h5>Motivo</h5></label>
+            <textarea id="subject" name="subject" placeholder="Razón para contactarse conmigo..."
+                rows="5"></textarea><br>
+            <!-- force older browsers to submit your form data as UTF8. It helps ensure all submissions to your form will be encoded the same way.
+         See https://intercom.help/formkeep/frequently-asked-questions/why-do-you-include-the-utf8-hidden-field-in-your-example-forms
+    -->
+            <input type="hidden" name="utf8" value="✓">
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar datos</button>
+        </form>
+    </section>
+</body>
+
+</html>

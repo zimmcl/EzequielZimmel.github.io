@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/proyectos.css">
+
+</head>
+
+<body>
+<hr>
+    <section class="thirteen columns">
+        <h1>Repositorios</h1>
+    </section>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade" align="center">
+            <div class="numbertext">1 / 9</div>
+            <a href="https://github.com/zimmcl/EDII_TPFinal">
+                <img src="{{ site.baseurl }}static/img/cardistance.png" style="width:50%" />
+            </a>
+            <div class="text-block">
+                <h5>Sensor de distancia</h5>
+                <p>Desarrollado en Assembler</p>
+            </div>
+        </div>
+
+        <div class="mySlides fade" align="center">
+            <div class="numbertext">2 / 9</div>
+            <a href="https://github.com/zimmcl/SO2_OMP">
+                <img src="{{ site.baseurl }}static/img/kernelFilter.png" style="width:50%" />
+            </a>
+            <div class="text-block">
+                <h5>Filtra de Imagen</h5>
+                <p>Desarrollado en C/C++/OpenMP</p>
+            </div>
+        </div>
+
+        <div class="mySlides fade" align="center">
+            <div class="numbertext">3 / 9</div>
+            <a href="http://zimmcl.github.io/IngSoft-2016-SeDiceAtomico/">
+                <img src="{{ site.baseurl }}static/img/cintamatrix.png" style="width:50%" />
+            </a>
+            <div class="text-block">
+                <h5>CintaMatrix 300</h5>
+                <p>Desarrollado en Java</p>
+            </div>
+        </div>
+
+        <div class="mySlides fade" align="center">
+            <div class="numbertext">4 / 9</div>
+            <a href="https://github.com/zimmcl/EDIII_TPFinal">
+                <img src="{{ site.baseurl }}static/img/cimon.png" style="width:50%"/>
+            </a>
+            <div class="text-block">
+                <h5>Simon Game</h5>
+                <p>Desarrollado en C/C++</p>
+            </div>
+        </div>
+
+        <div class="mySlides fade" align="center">
+            <div class="numbertext">5 / 9</div>
+            <a href="https://github.com/zimmcl/SO2_Embebido">
+                <img src="{{ site.baseurl }}static/img/embebido.png" style="width:50%"/>
+            </a>
+            <div class="text-block">
+                <h5>Embebido</h5>
+                <p>Desarrollado en C/C++/Perl/Html</p>
+            </div>
+        </div>
+
+        <div class="mySlides fade" align="center">
+            <div class="numbertext">6 / 9</div>
+            <a href="https://github.com/zimmcl/MySQL_Sakila">
+                <img src="{{ site.baseurl }}static/img/mysql.png" style="width:50%"/>
+            </a>
+            <div class="text-block">
+                <h5>Sakila Querys</h5>
+                <p>Consultas MySQL</p>
+            </div>
+        </div>
+
+        <div class="mySlides fade" align="center">
+            <div class="numbertext">7 / 9</div>
+            <a href="https://github.com/zimmcl/SO2_Socket">
+                <img src="{{ site.baseurl }}static/img/socket.png" style="width:50%"/>
+            </a>
+            <div class="text-block">
+                <h5>Interfaz Socket</h5>
+                <p>Desarrollado en C/C++</p>
+            </div>
+        </div>
+
+        <div class="mySlides fade" align="center">
+            <div class="numbertext">8 / 9</div>
+            <a href="https://github.com/zimmcl/SO2_RTOS">
+                <img src="{{ site.baseurl }}static/img/freeRtos.png" style="width:50%"/>
+            </a>
+            <div class="text-block">
+                <h5>Real Time</h5>
+                <p>Desarrollado en C/C++</p>
+            </div>
+        </div>
+
+        <div class="mySlides fade" align="center">
+            <div class="numbertext">9 / 9</div>
+            <a href="https://github.com/zimmcl/zimmcl.github.io">
+                <img src="{{ site.baseurl }}static/img/jekyll.png" style="width:50%"/>
+            </a>
+            <div class="text-block">
+                <h5>Pagina Personal</h5>
+                <p>Desarrollado Jekyll</p>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+<!--
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/proyectos.css">
+</head>
+
+<body>
+    <section class="thirteen columns">
+        <h1>Repositorios</h1>
+    </section>
+
+    <div class="outer-grid">
+        <div class="inner-grid">
+            <div class="container_b">
+                <a href="https://github.com/zimmcl/EDII_TPFinal">
+                    <img src="{{ site.baseurl }}static/img/cardistance.png" />
+                </a>
+                <div class="text-block">
+                    <h5>Sensor de distancia</h5>
+                    <p>Desarrollado en Assembler</p>
+                </div>
+            </div>
+            <div class="container_b">
+                <a href="https://github.com/zimmcl/SO2_OMP">
+                    <img src="{{ site.baseurl }}static/img/kernelFilter.png" />
+                </a>
+                <div class="text-block">
+                    <h5>Filtra de Imagen</h5>
+                    <p>Desarrollado en C/C++/OpenMP</p>
+                </div>
+            </div>
+            <div class="container_b">
+                <a href="http://zimmcl.github.io/IngSoft-2016-SeDiceAtomico/">
+                    <img src="{{ site.baseurl }}static/img/cintamatrix.png" />
+                </a>
+                <div class="text-block">
+                    <h5>CintaMatrix 300</h5>
+                    <p>Desarrollado en Java</p>
+                </div>
+            </div>
+        </div>
+        <div class="inner-grid">
+            <div class="container_b">
+                <a href="https://github.com/zimmcl/EDIII_TPFinal">
+                    <img src="{{ site.baseurl }}static/img/cimon.png" />
+                </a>
+                <div class="text-block">
+                    <h5>Simon Game</h5>
+                    <p>Desarrollado en C/C++</p>
+                </div>
+            </div>
+            <div class="container_b">
+                <a href="https://github.com/zimmcl/SO2_Embebido">
+                    <img src="{{ site.baseurl }}static/img/embebido.png" />
+                </a>
+                <div class="text-block">
+                    <h5>Embebido</h5>
+                    <p>Desarrollado en C/C++/Perl/Html</p>
+                </div>
+            </div>
+            <div class="container_b">
+                <a href="https://github.com/zimmcl/MySQL_Sakila">
+                    <img src="{{ site.baseurl }}static/img/mysql.png" />
+                </a>
+                <div class="text-block">
+                    <h5>Sakila Querys</h5>
+                    <p>Consultas MySQL</p>
+                </div>
+            </div>
+        </div>
+        <div class="inner-grid">
+            <div class="container_b">
+                <a href="https://github.com/zimmcl/SO2_Socket">
+                    <img src="{{ site.baseurl }}static/img/socket.png" />
+                </a>
+                <div class="text-block">
+                    <h5>Interfaz Socket</h5>
+                    <p>Desarrollado en C/C++</p>
+                </div>
+            </div>
+            <div class="container_b">
+                <a href="https://github.com/zimmcl/SO2_RTOS">
+                    <img src="{{ site.baseurl }}static/img/freeRtos.png" />
+                </a>
+                <div class="text-block">
+                    <h5>Real Time</h5>
+                    <p>Desarrollado en C/C++</p>
+                </div>
+            </div>
+            <div class="container_b">
+                <a href="https://github.com/zimmcl/zimmcl.github.io">
+                    <img src="{{ site.baseurl }}static/img/jekyll.png" />
+                </a>
+                <div class="text-block">
+                    <h5>Pagina Personal</h5>
+                    <p>Desarrollado Jekyll</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <article>
+        <h5>
+            <p align="center">Acceda al repositorio completo mediante el siguiente
+                <a href="https://github.com/zimmcl?tab=repositories" target="_blank">
+                    <font size="4" color="blue"> enlace</font>
+                </a></p>
+        </h5>
+    </article>
+
+</body>
+
+</html>
+-->

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>{{ site.title }}</title>
@@ -8,62 +9,80 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="stylesheet" href="{{ site.baseurl }}static/css/base.css"> 
+    <link rel="stylesheet" href="{{ site.baseurl }}static/css/base.css">
     <link rel="stylesheet" href="{{ site.baseurl }}static/css/skeleton.css">
     <link rel="stylesheet" href="{{ site.baseurl }}static/css/layout.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}static/css/navigation.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link rel="shortcut icon" href="{{ site.baseurl }}static/img/favicon.ico">
 </head>
+
+
 <body>
-<div class="container">
-    <header class="three columns">
-        <img src="{{ site.baseurl }}static/img/avatar.jpg" class="me">
-        <h1>{{ site.name }}</h1>
-        <h5><i class="fa fa-calendar" aria-hidden="true"></i> {{ site.fecha }}</h5><br>
-        <p>
-            <a href="tel:{{ site.tel_full }}" target="_blank"><i class="fa fa-mobile" aria-hidden="true"></i>  {{ site.tel }}</a>
-        </p>
-        <address>
-            <a href="{{ site.google_maps }}" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>  
-                {{ site.address }}<br/>
-                {{ site.postcode }}
-                {{ site.city }} - 
-                {{ site.country }}
-            </a>
-        </address>
-        <p>
-            <!--<a href="{{ site.website_full }}">{{ site.website }}</a><br/>-->
-        </p>
-        <p>
-            <a href="mailto:{{ site.email }}">{{ site.email }}</a><br/>
-            <a href="https://github.com/{{ site.github }}" target="_blank"><i class="fa fa-github"></i> Github</a> |
-            <a href="https://facebook.com/{{ site.facebook }}" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
-            <a href="https://www.linkedin.com/in/ezequiel-j-zimmel/" target="_blank"><i class="fa fa-linkedin"></i> Linkedin</a>
-        </p>
-        <button><a href="{{ site.baseurl }}static/img/Curriculum_Vitae.pdf" target="_blank"><font size="3" color="#27a822">Descargar CV</font></a></button>
-    </header>
+    <div class="container">
+        <header class="three columns">
+            <img src="{{ site.baseurl }}static/img/avatar.jpg" class="me">
+            <h1>{{ site.name }}</h1>
+            <h5><i class="fa fa-calendar" aria-hidden="true"></i> {{ site.fecha }}</h5><br>
+            <p>
+                <a href="tel:{{ site.tel_full }}" target="_blank"><i class="fa fa-mobile" aria-hidden="true"></i>
+                    {{ site.tel }}</a>
+            </p>
+            <address>
+                <a href="{{ site.google_maps }}" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    {{ site.address }}<br />
+                    {{ site.postcode }}
+                    {{ site.city }} -
+                    {{ site.country }}
+                </a>
+            </address>
+            <p>
+                <!--<a href="{{ site.website_full }}">{{ site.website }}</a><br/>-->
+            </p>
+            <p>
+                <a href="mailto:{{ site.email }}">{{ site.email }}</a><br />
+                <a href="https://github.com/{{ site.github }}" target="_blank"><i class="fa fa-github"></i> Github</a> |
+                <a href="https://facebook.com/{{ site.facebook }}" target="_blank"><i class="fa fa-facebook"></i>
+                    Facebook</a>
+                <a href="https://www.linkedin.com/in/ezequiel-j-zimmel/" target="_blank"><i class="fa fa-linkedin"></i>
+                    Linkedin</a>
+            </p>
+            <button><a href="{{ site.baseurl }}static/img/Curriculum_Vitae.pdf" target="_blank">
+                    <font size="3" color="#27a822">Descargar CV</font>
+                </a></button>
+        </header>
 
-    <div class="thirteen columns clearfix">
+        <div class="thirteen columns clearfix">
 
-        {{ content }}
-     <p align="center"><img src="{{ site.baseurl }}static/img/firma.jpg" class="firma" width="100px" height="75"></p>   
-    <footer class="thirteen columns">
-        <p align="center">Original Theme by <a href="https://www.github.com/biomadeira/vitae">vitae</a>
-             | {{site.name}} - © {{ site.time | date: '%Y' }}</p>
-    </footer>
+            {{ content }}
+            <p align="center"><img src="{{ site.baseurl }}static/img/firma.jpg" class="firma" width="100px" height="75">
+            </p>
+            <footer class="thirteen columns">
+                <p align="center">
+                    {{site.name}} - © {{ site.time | date: '%Y' }} <br>
+                    Original Theme by <a href="https://www.github.com/biomadeira/vitae">vitae</a>
+                </p>
+            </footer>
+        </div>
     </div>
-</div>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', '{{ site.google_analytics }}', 'auto');
-  ga('send', 'pageview');
-
-</script>	
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,31 @@
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container_c {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 1px; /* Add top padding */
+  padding-bottom: 1px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.ofimatica {width: 80%; background-color: #4CAF50;} /* Green */
+.html {width: 70%; background-color: #2196F3;} 
+.css {width: 55%; background-color: #2196F3;} /* Blue */
+.js {width: 30%; background-color: #808080;} /* Dark Grey */
+.c {width: 60%; background-color: #2196F3;} 
+.java {width: 60%; background-color: #2196F3;} 
+.py {width: 55%; background-color: #2196F3;}
+.sql {width: 55%; background-color: #2196F3;} 
+.dk {width: 50%; background-color: #2196F3;} 
+
+.init {width: 90%; background-color: #4CAF50;}
+.teq {width: 85%; background-color: #4CAF50;}
+.com {width: 75%; background-color: #2196F3;}
+.crea {width: 65%; background-color: #2196F3;}
+.comp {width: 100%; background-color: #00804a;}
